@@ -1,7 +1,5 @@
 # Guidepost
 
-🪧 *Find your way — instantly.*
-
 **Guidepost** is a lightweight developer tool for surfacing useful metadata about apps running in Kubernetes. It exposes links to logs, dashboards, CI pipelines, docs, and more — helping developers quickly orient themselves without digging through documentation.
 
 ---
