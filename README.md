@@ -5,17 +5,13 @@
 ---
 
 ## What it does
-
-- Reads per-app JSON metadata files from S3
-- Caches metadata in a local SQLite database
-- Serves a simple HTTP API for querying metadata
-- Includes a CLI for retrieving and opening app links
-- Supports manual sync of individual apps from S3
-- Allows templating of link formats to avoid repeating base URLs
+Guidepost provides a simple way to:
+- Register apps and their metadata within etcd via the `Guidepost` CR.
+- Links stored in a `Guidepost` are dynamically rendered, and base URLs are defined through a `GuidepostLinkTemplate` CR.
 
 ---
 
-## Example metadata (stored in S3)
+## `Guidepost` Custom Resource
 
 Each app gets a single JSON file (e.g., `guidepost-metadata/my-app.json`):
 
